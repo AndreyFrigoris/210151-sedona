@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Андрей Журавский](https://up.htmlacademy.ru/htmlcss/14/user/210151).
-* Наставник: [Никита Рогатнев].(https://htmlacademy.ru/profile/id86119)
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/id86119)
 
 ---
 
