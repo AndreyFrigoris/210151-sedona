@@ -5,8 +5,8 @@
     <title>Седона</title>
   </head>
   <body>
+   <div class="container">
     <header class="main-header">
-     <div class="container">
        <nav class="main-nav">
          <ul>
            <li>
@@ -28,23 +28,108 @@
          <img src="img/index-logo.png" width="240" height="70" alt="logo">
          </a>
        </div>
-      </div>
     </header>
     <main>
-      <section>
-
+      <section class="choice">
+        <div class="choice-comfort">
+          <h2>Инфраструктура:</h2>
+          <form action="#" method="post">
+            <label>
+              <input type="checkbox" checked name="pool">Бассейн
+            </label>
+            <label>
+              <input type="checkbox" name="parking">Парковка
+            </label>
+            <label>
+            <input type="checkbox" name="wi-fi">Wi-Fi
+            </label>
+          </form>
+        </div>
+        <div class="choice-type">
+          <h2>Тип жилья:</h2>
+          <form action="#" method="post">
+            <label>
+              <input type="checkbox" checked name="hotel">Гостиница
+            </label>
+            <label>
+              <input type="checkbox" checked name="motel">Мотель
+            </label>
+            <label>
+            <input type="checkbox" checked name="apartments">Апартаменты
+            </label>
+          </form>
+        </div>
+        <div class="choice-price">
+          <h2>Стоимость в сутки (р):</h2>
+            <span>От 0</span>
+            <span>До 3000</span>
+          <form action="#" method="post">
+            <input type="range" name="price-range">
+            <input class="btn" type="submit" name="show" value="Показать">
+          </form>
+        </div>
       </section>
-      <section>
-
+      <section class="sort">
+        <div class="sort-finded">
+          <span>Найдено: 3</span>
+        </div>
+        <div class="sort-type">
+          <span>Сортировка:</span>
+          <ul>
+            <li>По цене</li>
+            <li>По типу</li>
+            <li>По рейтингу</li>
+          </ul>
+        </div>
+        <div class="sort-up-down">
+          <form>
+          </form>
+        </div>
       </section>
-      <article class="">
-
+      <article class="hotel-features">
+        <div class="hotel-img">
+          <img src="#" alt="Amara">
+        </div>
+        <div class="hotel-feature">
+          <h1><a href="#">AMARA RESORT &amp; SPA</a></h1>
+          <span>Гостиница</span>
+          <span>от 3500 р.</span>
+          <a href="#">Подробнее</a>
+          <input type="submit" value="Забронировать">
+        </div>
+        <div class="hotel-rank">
+          <span>Рейтинг: 8,5</span>
+        </div>
       </article>
-      <article class="">
-
+      <article class="hotel">
+        <div class="hotel-img">
+          <img src="#" alt="Desert">
+        </div>
+        <div class="hotel-feature">
+          <h1><a href="#">DESERT QUAIL INN</a></h1>
+          <span>Мотель</span>
+          <span>от 2000 р.</span>
+          <a href="#">Подробнее</a>
+          <input type="submit" value="Забронировать">
+        </div>
+        <div class="hotel-rank">
+          <span>Рейтинг: 8,9</span>
+        </div>
       </article>
-      <article class="">
-
+      <article class="hotel">
+        <div class="hotel-img">
+          <img src="#" alt="Villas">
+        </div>
+        <div class="hotel-feature">
+          <h1><a href="#">VILLAS AT POCO DIABLO</a></h1>
+          <span>Апартаменты</span>
+          <span>от 4000 р.</span>
+          <a href="#">Подробнее</a>
+          <input type="submit" value="Забронировать">
+        </div>
+        <div class="hotel-rank">
+          <span>Рейтинг: 9,2</span>
+        </div>
       </article>
     </main>
     <footer>
@@ -60,5 +145,6 @@
         <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
       </div>
     </footer>
+   </div>
   </body>
 </html>
