@@ -1,9 +1,21 @@
+* {
+  box-sizing:border-box;
+}
+
+@font-face {
+font-family: 'MyWebFont';
+src: url('myfont.woff2') format('woff2'),
+url('myfont.woff') format('woff');
+}
+
 body {
   font-family: "PT Sans";
   font-size: 14px;
   color: #333333;
   line-height: 21px;
   text-transform: uppercase;
+  width: 100%;
+  background-color: f2f2f2;
 }
 
 h1 {
@@ -20,4 +32,151 @@ h2 {
   color: #000000;
   line-height: 26px;
   font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+}
+
+.main-header {
+  display: flex;
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav ul li {
+  width: 240px;
+  text-align: center;
+}
+
+.main-nav ul li:nth-child(2) {
+  margin-right:240px;
+}
+
+.main-header .header-logo {
+  position: absolute;
+  top: 0;
+  left: 600px;
+  margin-left: -69px;
+}
+
+
+
+.index-intro {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-intro {
+  width: 458px;
+  height: 352px;
+  align-self: center;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1200px;
+  height: 216px;
+}
+
+.headline h2 {
+  text-align: center;
+}
+
+.headline p {
+  text-align: center;
+}
+
+.services {
+   width: 1200px;
+   display: flex;
+   justify-content: space-between;
+ }
+
+.features-item h2 {
+  text-align: center;
+  padding-left: 124px;
+  padding-right: 124px;
+}
+
+.features-item, span {
+  text-align: center;
+}
+
+.features-item p {
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.features-blue {
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.features-gray {
+  background-color: #eeeeee;
+}
+
+.features-blue h2 {
+  color: #ffffff;
+}
+
+.service-item {
+  text-align: center;
+  width: 400px;
+  height: 330px;
+  align-self: center;
+}
+
+.features {
+  display: flex;
+}
+
+.features-item {
+  width: 400px;
+  height: 256px;
+}
+
+.hotel-search {
+  text-align: center;
+  width: 1200px;
+  height: 291px;
+}
+
+.order-form {
+  text-align: center;
+
+}
+
+footer {
+  display: flex;
+  width: 1200px;
+  height: 120px;
+  background: rgba(255,255,255, 0,9);
+}
+
+.footer-link {
+  width: 400px;
+  height: auto;
+  text-align: center;
+}
+
+.footer-social {
+  width: 400px;
+  height: auto;
+  text-align: center;
+}
+
+.footer-copyright {
+  width: 400px;
+  height: auto;
+  text-align: center;
 }
