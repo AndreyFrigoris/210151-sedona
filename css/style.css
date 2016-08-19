@@ -38,6 +38,8 @@ h2 {
   display: flex;
   flex-direction: column;
   width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .main-header {
@@ -47,11 +49,16 @@ h2 {
 .main-nav ul {
   display: flex;
   justify-content: space-between;
+  list-style: none;
 }
 
 .main-nav ul li {
   width: 240px;
   text-align: center;
+}
+
+.main-nav a {
+  text-decoration: none;
 }
 
 .main-nav ul li:nth-child(2) {
@@ -61,21 +68,20 @@ h2 {
 .main-header .header-logo {
   position: absolute;
   top: 0;
-  left: 600px;
+  left: 50%;
   margin-left: -69px;
 }
 
 
 
 .index-intro {
+  background: url(img/intro-photo.jpg);
   display: flex;
   flex-direction: row;
 }
 
-.text-intro {
-  width: 458px;
-  height: 352px;
-  align-self: center;
+.index-intro img {
+  align-self: flex-end;
 }
 
 .headline {
@@ -153,7 +159,6 @@ h2 {
 
 .order-form {
   text-align: center;
-
 }
 
 footer {
@@ -179,4 +184,35 @@ footer {
   width: 400px;
   height: auto;
   text-align: center;
+}
+
+.choice form {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  height: 217px;
+  margin-top: 10px;
+}
+
+.sort {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotel-features {
+  display: flex;
+  height: 152px;
+}
+
+.hotel-features img {
+  width: 135px;
+  height: auto;
+}
+
+.hotel-features .hotel-feature {
+  width: 810px;
+}
+
+.hotel-features .hotel-rank {
+  width: 183px;
 }
