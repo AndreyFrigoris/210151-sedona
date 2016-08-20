@@ -261,9 +261,17 @@ footer {
   border-bottom: 1px solid #e5e5e5;
 }
 
+.sort ul {
+  display: inline-block;
+  list-style: none;
+}
+
 .sort ul li {
   display: inline;
-  list-style: none;
+}
+
+.sort span {
+  display: inline-block;
 }
 
 .sort-finded {
@@ -274,10 +282,13 @@ footer {
 .sort-type {
   width: 769px;
   margin-left: 30px;
+  font-size: 12px;
+  align-self: center;
 }
 
 .sort-up-down {
   width: 183px;
+  align-self: center;
 }
 
 .hotel-features {
