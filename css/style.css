@@ -270,13 +270,6 @@ a {
   padding-right: 50px;
 }
 
-/*
-.map {
-	position: relative;
-	background-image: url(../img/map.jpg);
-	height: 593px;
-}
-*/
 .hotel-search {
   display: flex;
   flex-direction: column;
@@ -316,17 +309,40 @@ a {
   height: 291px;
 }
 
+.map {
+	position: relative;
+	background-image: url(../img/map.jpg);
+  width: 1200px;
+	height: 593px;
+}
+
 .order-form {
-  text-align: center;
   display: none;
 }
 
+.order-form {
+  width: 568px;
+  height: 395px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 316px;
+  padding: 55px;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+}
+
 footer {
+  position: relative;
   display: flex;
   align-items: center;
   width: 1200px;
   height: 120px;
-  background: rgba(255,255,255, 0,9);
+  background: rgba(255,255,255, 0.9);
+  margin-top: -120px;
+  z-index: 1;
 }
 
 .footer-link {
@@ -466,16 +482,17 @@ footer {
 }
 
 
-
 .choice-comfort label::before,
 .choice-type label::before {
 	content: "\2610";
   font-family: "symbols-sedona";
-	width: 29px;
+	width: 26px;
 	height: 22px;
 	font-size: 26px;
   margin-right: 16px;
   vertical-align: middle;
+  cursor: pointer;
+  display: inline-block;
 }
 
 input[type=checkbox]:checked + label::before {
@@ -503,7 +520,8 @@ input[type=checkbox]:checked:disabled + label::before {
   margin-bottom: 20px;
 }
 
-.choice-comfort label {
+.choice-comfort label,
+.choice-type label {
   line-height:21px;
   font-size: 14px;
 }
@@ -611,15 +629,6 @@ input[type=checkbox]:checked:disabled + label::before {
 .icon-down-dir.active {
 	color: #81b3d2;
 }
-
-
-
-
-
-
-
-
-
 
 .hotel-features {
   display: flex;
@@ -731,4 +740,5 @@ input[type=checkbox]:checked:disabled + label::before {
 
 .hotels-footer {
   background-color: #fefefe;
+  margin: 0;
 }
