@@ -135,6 +135,7 @@ a {
   top: 0;
   left: 50%;
   margin-left: -69px;
+  z-index: 100;
 }
 
 .index-intro {
@@ -316,9 +317,9 @@ a {
 	height: 593px;
 }
 
-.order-form {
+/*.order-form {
   display: none;
-}
+}*/
 
 .order-form {
   width: 568px;
@@ -332,7 +333,140 @@ a {
   line-height: 26px;
   color: #000000;
   font-weight: bold;
+  box-shadow: 0 5px 25px -5px #939393;
 }
+
+.order-form .search-ok {
+  width: 100%;
+  height: 58px;
+  margin: 55px auto;
+  background-color: #81b3d2;
+  border: none;
+  padding: 0;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.order-form .search-ok:hover {
+  background-color: #669ec0;
+}
+
+.order-form .search-ok:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+
+.order-form input {
+  text-transform: uppercase;
+}
+
+.order-form-date {
+  margin-bottom: 29px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.order-form-date input {
+  width: 346px;
+  height: 38px;
+  background-color: #f2f2f2;
+  border: none;
+  padding-left: 12px;
+  outline: none;
+  padding-right: 42px;
+}
+
+.icon-calendar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 21px;
+  color: #c2c2c2;
+  z-index: 2;
+  padding: 6px;
+}
+
+.icon-calendar:hover {
+  color: #000000;
+}
+
+.icon-calendar:active {
+  color: #81b3d2;
+}
+
+.order-form-date input:hover {
+  background-color: #ebebeb;
+}
+
+.order-form-date input:focus {
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 2px #e5e5e5;
+}
+
+.humans {
+  display: flex;
+  justify-content: space-between;
+}
+
+.children {
+  /*display: inline-block;*/
+  width: 179px;
+}
+
+.adults {
+  /*display: inline-block;*/
+  width: 226px;
+}
+
+.adults input,
+.adults button,
+.children input,
+.children button {
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+  border: none;
+  text-align: center;
+  margin-right: -4px;
+  padding: 0;
+  outline: none;
+}
+
+.children .icon-minus {
+  margin-left: 25px;
+}
+
+.adults .icon-minus {
+  margin-left: 38px;
+}
+
+.icon-minus,
+.icon-plus {
+  color: #a9a9a9;
+}
+
+.icon-minus:hover,
+.icon-plus:hover {
+  color: #000000;
+}
+
+.icon-minus:active,
+.icon-plus:active {
+  color: #81b3d2;
+}
+
+
+
+
+
+
+
+
+
+
 
 footer {
   position: relative;
@@ -526,15 +660,119 @@ input[type=checkbox]:checked:disabled + label::before {
   font-size: 14px;
 }
 
-/*Сложная форма*/
-
-.choice-price {
-  width: 600px;
-  padding-left: 100px;
-  text-align: center;
+.filter-range {
+  width: 330px;
+  margin-left: 198px;
+  margin-right: 72px;
 }
 
+.filter-range-title h2 {
+  margin-bottom: 12px;
+}
 
+.price-controls {
+  height: 36px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  font-size: 0;
+  position: relative;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 30px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 155px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -9px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
+}
 
 .sort {
   display: flex;
