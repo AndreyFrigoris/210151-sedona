@@ -500,6 +500,11 @@ a {
     padding-right: 42px;
 }
 
+.order-form-date label {
+    display: block;
+    width: 112px;
+}
+
 .icon-calendar {
     position: absolute;
     top: 0;
